@@ -19,4 +19,14 @@ public class Character : ScriptableObject
     {
         Debug.Log(characterName + ": " + description);
     }
+
+    public void RandomAbilities()
+    {
+        strength = Random.Range(1, 20);
+        dexterity = Random.Range(1, 20);
+        constitution = Random.Range(1, 20);
+        intelligence = Random.Range(1, 20);
+        wisdom = Random.Range(1, 20);
+        charisma = Random.Range(1, 20);
+    }
 }
